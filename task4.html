@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 | Academic Table &amp; Feedback</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/task4.css">
+</head>
+<body>
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Task 1: Profile</a></li>
+      <li><a href="task2.html">Task 2: Layout</a></li>
+      <li><a href="task3.html">Task 3: Tribute</a></li>
+      <li><a href="task4.html" class="active">Task 4: Table &amp; Form</a></li>
+      <li><a href="task5.html">Task 5: Midterm</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="table-wrap">
+      <h1 class="section-title">Semester Grades</h1>
+      <table class="grades-table" aria-label="Academic performance table">
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Grade</th>
+            <th>Instructor Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Aldiyar</td>
+            <td>Web Development</td>
+            <td>A</td>
+            <td>Excellent problem-solving and design quality.</td>
+          </tr>
+          <tr>
+            <td>Database Systems</td>
+            <td>A-</td>
+            <td>Strong understanding of relational design.</td>
+          </tr>
+          <tr>
+            <td>Karina</td>
+            <td colspan="2">Computer Science Fundamentals</td>
+            <td>B+</td>
+          </tr>
+          <tr>
+            <td>Arman</td>
+            <td>Programming Principles</td>
+            <td>B</td>
+            <td>Good work ethic and consistent progress.</td>
+          </tr>
+          <tr>
+            <td>Samira</td>
+            <td>Discrete Mathematics</td>
+            <td>A</td>
+            <td>Outstanding logical reasoning and accuracy.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="feedback-panel">
+      <h2 class="section-title">Feedback Form</h2>
+      <form class="feedback-form" action="#" method="post">
+        <label for="student-name">Full Name</label>
+        <input id="student-name" type="text" name="student-name" placeholder="Enter your name">
+
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com">
+
+        <label for="course">Course</label>
+        <select id="course" name="course">
+          <option value="">Choose a course</option>
+          <option value="web-dev">Web Development</option>
+          <option value="db">Database Systems</option>
+          <option value="oop">Object-Oriented Programming</option>
+          <option value="math">Discrete Mathematics</option>
+        </select>
+
+        <label>Difficulty Level</label>
+        <div class="radio-group">
+          <label><input type="radio" name="difficulty" value="easy"> Easy</label>
+          <label><input type="radio" name="difficulty" value="medium" checked> Medium</label>
+          <label><input type="radio" name="difficulty" value="hard"> Hard</label>
+        </div>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Share your feedback..."></textarea>
+
+        <button class="form-button" type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>AITU — Academic Performance &amp; Feedback</p>
+  </footer>
+</body>
+</html>
+

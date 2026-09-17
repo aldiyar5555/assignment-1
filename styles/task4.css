@@ -1,0 +1,134 @@
+.table-wrap {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 1.3rem;
+  margin: 2rem auto;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: var(--ink);
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.grades-table th,
+.grades-table td {
+  border: 1px solid #e2e8f0;
+  padding: 0.9rem 1rem;
+  text-align: left;
+}
+
+.grades-table thead th {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.grades-table tbody tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.grades-table tbody tr:nth-child(odd) td {
+  background: #ffffff;
+}
+
+.feedback-panel {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin: 2rem auto 0;
+}
+
+.feedback-form {
+  margin-top: 1rem;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: var(--ink);
+  font: inherit;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.radio-group input {
+  accent-color: var(--primary);
+}
+
+.form-button {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
+}
+
+.form-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .table-wrap,
+  .feedback-panel {
+    padding: 1rem;
+  }
+
+  .grades-table th,
+  .grades-table td {
+    padding: 0.7rem 0.6rem;
+    font-size: 0.92rem;
+  }
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 | Moodle Course Layout</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/task2.css">
+</head>
+<body>
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Task 1: Profile</a></li>
+      <li><a href="task2.html" class="active">Task 2: Layout</a></li>
+      <li><a href="task3.html">Task 3: Tribute</a></li>
+      <li><a href="task4.html">Task 4: Table &amp; Form</a></li>
+      <li><a href="task5.html">Task 5: Midterm</a></li>
+    </ul>
+  </nav>
+
+  <main class="moodle-page clearfix">
+    <aside class="moodle-sidebar">
+      <div class="sidebar-card">
+        <h2>Navigation</h2>
+        <ul class="side-menu">
+          <li>
+            <span class="nav-arrow">▾</span>
+            <a href="#">Home (Dashboard)</a>
+          </li>
+          <li>
+            <span class="nav-arrow">▾</span>
+            <a href="#">Site pages</a>
+          </li>
+          <li class="menu-group">
+            <span class="nav-arrow">▾</span>
+            <a href="#">My courses</a>
+            <ul class="sub-menu">
+              <li><a href="#">Kazakh (Russian) Language 1 (B1) | Utanova Aizada</a></li>
+              <li><a href="#">WEB Technologies 1 (Front End) | Alimzhan Assel</a></li>
+              <li><a href="#">Operating Systems | Turysbek Nazym</a></li>
+              <li><a href="#">Introduction to Finance | Shakenov Daulet</a></li>
+              <li><a href="#">Design and Analysis of Algorithms | Aidynkyzy Aidana</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="moodle-main">
+      <article class="week-card">
+        <div class="week-header">
+          <h3>Week 1</h3>
+        </div>
+
+        <div class="resource-item">
+          <span class="resource-icon link-icon">↗</span>
+          <a href="#">Lecture 1</a>
+        </div>
+
+        <div class="resource-item assignment-item">
+          <span class="resource-icon doc-icon">📄</span>
+          <div class="assignment-text">
+            <a href="#">Assignment 1</a>
+            <p>Opened: Monday, 7 September 2026, 12:00 AM<br>Due: Monday, 20 September 2026, 11:59 PM</p>
+          </div>
+        </div>
+
+        <div class="resource-item">
+          <span class="resource-icon pdf-icon">PDF</span>
+          <a href="#">Additional material</a>
+        </div>
+      </article>
+
+      <article class="week-card current-week">
+        <div class="week-header current-header">
+          <h3>Week 2</h3>
+          <span class="week-badge">Current week</span>
+        </div>
+
+        <div class="resource-item">
+          <span class="resource-icon link-icon">↗</span>
+          <a href="#">Lecture 2</a>
+        </div>
+
+        <div class="resource-item">
+          <span class="resource-icon pdf-icon">PDF</span>
+          <a href="#">Additional materials</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>AITU — Course Dashboard</p>
+  </footer>
+</body>
+</html>
+

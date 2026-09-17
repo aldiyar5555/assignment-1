@@ -1,0 +1,234 @@
+body {
+  background: #f3f6fb;
+  color: #1f2937;
+}
+
+.moodle-page {
+  max-width: 1170px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.moodle-sidebar {
+  float: left;
+  width: 280px;
+}
+
+.sidebar-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.sidebar-card h2 {
+  padding: 1rem 1.1rem 0.85rem;
+  font-size: 1.2rem;
+  color: #0f172a;
+  border-bottom: 1px solid #edf2f7;
+  background: #f8fafc;
+}
+
+.side-menu,
+.sub-menu {
+  list-style: none;
+}
+
+.side-menu {
+  padding: 0.8rem 0.7rem 1rem;
+}
+
+.side-menu > li,
+.sub-menu > li {
+  margin-bottom: 0.2rem;
+}
+
+.side-menu > li {
+  padding: 0.3rem 0.4rem;
+}
+
+.side-menu a,
+.sub-menu a {
+  color: #334155;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.side-menu a:hover,
+.sub-menu a:hover {
+  color: #0284c7;
+}
+
+.nav-arrow {
+  display: inline-block;
+  color: #64748b;
+  width: 1rem;
+  font-size: 0.8rem;
+}
+
+.menu-group {
+  margin-top: 0.15rem;
+}
+
+.sub-menu {
+  padding-left: 1.5rem;
+  margin-top: 0.45rem;
+}
+
+.sub-menu li {
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-left: 2px solid transparent;
+}
+
+.sub-menu li:hover {
+  border-left-color: #2563eb;
+  background: #f8fafc;
+}
+
+.sub-menu a {
+  display: block;
+  font-size: 0.92rem;
+  color: #475569;
+}
+
+.moodle-main {
+  float: right;
+  width: calc(100% - 310px);
+}
+
+.week-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+.week-header {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #edf2f7;
+  background: #f8fafc;
+}
+
+.week-header h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.current-week {
+  border-left: 4px solid #2563eb;
+}
+
+.current-header {
+  position: relative;
+}
+
+.week-badge {
+  display: inline-block;
+  margin-left: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.resource-item {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #edf2f7;
+  background: #fff;
+}
+
+.resource-item:last-child {
+  border-bottom: none;
+}
+
+.resource-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 0.76rem;
+  line-height: 22px;
+  text-align: center;
+  margin-right: 0.7rem;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+.link-icon {
+  background: #dbeafe;
+  color: #0369a1;
+}
+
+.doc-icon {
+  background: #e0f2fe;
+  color: #0f766e;
+}
+
+.pdf-icon {
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.65rem;
+  width: 30px;
+}
+
+.resource-item a {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resource-item a:hover {
+  color: #2563eb;
+}
+
+.assignment-item {
+  background: #fbfdff;
+}
+
+.assignment-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.assignment-text p {
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  clear: both;
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .moodle-sidebar,
+  .moodle-main {
+    float: none;
+    width: 100%;
+  }
+
+  .moodle-sidebar {
+    margin-bottom: 1rem;
+  }
+}
+

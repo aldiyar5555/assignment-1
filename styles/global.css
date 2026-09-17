@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-soft: #dbeafe;
+  --ink: #0f172a;
+  --slate: #334155;
+  --muted: #64748b;
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --line: #e2e8f0;
+  --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+.main-nav {
+  background: rgba(15, 23, 42, 0.98);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.main-nav ul {
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #e2e8f0;
+  font-weight: 600;
+  padding: 0.7rem 1.05rem;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: linear-gradient(135deg, var(--primary) 0%, #3b82f6 100%);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+.container {
+  max-width: 1120px;
+  margin: 2rem auto;
+  padding: 0 1.1rem;
+}
+
+.page-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+footer p {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 640px) {
+  .main-nav ul {
+    gap: 0.4rem;
+  }
+
+  .main-nav a {
+    padding: 0.55rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
